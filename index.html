@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehua-fashion-clothes</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header__mobile header__mobile--fixed">
     <div class="container">
       <div class="header-wrapper">
         <a href="#" class="logo">
           <img src="img/Logo.svg" alt="Logo: Ehua - fashion clothes" class="logo__image">
         </a> <!-- /.logo -->
-        <div class="header-right">
+        <div class="header-right header-right--mobile--hidden">
           <ul class="header-menu">
             <li class="header-menu__item">
               <a href="#" class="header-menu__link">Главная</a>
@@ -37,6 +39,11 @@
           <button class="header-right__button">Войти</button>
         </div>
         <!-- /.header-right -->
+        <button class="header header-right header-right__menu-button">
+          <span class="header-right__line"></span>
+          <span class="header-right__line"></span>
+          <span class="header-right__line"></span>
+        </button>
         
         <!-- /.header-menu -->
       </div>
