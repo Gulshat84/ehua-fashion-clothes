@@ -32,7 +32,83 @@
         width: 24px
         height: 1px
         background-color: #3A4C66
+  .main
+    &-wrapper
+      max-width: 728px
+      min-height: 624px
+      overflow: hidden
+      margin: auto
+    &-image
+      width: 100%
+      overflow-x: hidden
+      overflow-y: hidden
+    &-offer
+      align-self: center
+      max-width: 407px
+      margin-top: 36px
+      margin-bottom: 36px
+      margin-left: 28px
+    &-label
+      margin-bottom: 24px
+    &-title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+    &-text
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+    &-button
+      margin-bottom: 40px
+    &-advantages
+      max-width: 450px
+      &__link
+        margin-right: 21px
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
+@media (max-width: 576px)
+  .container
+    width: 100%
+  .header
+    &-wrapper
+      min-width: 272px
+  .main
+    &-wrapper
+      width: 100%
+      min-height: 900px
+      overflow: hidden
+      justify-content: flex-end
+      align-items: flex-end
+      overflow: visible
+    &-image
+      height: 900px
+      position: absolute
+    &-offer
+      justify-content: center
+      margin: auto
+      margin: 381px 20px 36px 20px
+      padding: 0 20px
+      overflow: visible
+    &-label
+      margin: auto
+      margin-bottom: 20px
+    &-title
+      text-align: center
+      font-size: 32px
+      line-height: 40px
+      margin-bottom: 20px
+    &-text
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 24px
+    &-button
+      display: block
+      margin: auto
+      margin-bottom: 22px
+    &-advantages
+      align-self: center
+      flex-wrap: wrap
+      justify-content: space-evenly
