@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  var trendsTabsItem = $('.trends-tabs__item');
-  var trendsGridItem = $('.trends-grid__item');
+  var trendsTabsItem = $(".trends-tabs__item");
+  var trendsContentItem = $(".trends-content__item");
 
-  trendsTabsItem.on('click', function (event) {
+  trendsTabsItem.on("click", function (event) {
     var activeContent = $(this).attr("data-target");
     trendsTabsItem.removeClass("trends-tabs__item--active");
-    trendsGridItem.removeClass("trends-grid__item--active");
-    $(activeContent).addClass("trends-grid__item--active");
+    trendsContentItem.removeClass("trends-content__item--active");
+    $(activeContent).addClass("trends-content__item--active");
     $(this).addClass("trends-tabs__item--active");
   });
 });
